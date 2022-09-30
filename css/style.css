@@ -1,0 +1,77 @@
+body {
+  background-image: url('../img/bg-patern.png');
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8F0EA;
+  border-radius: 15px;
+  padding: 15px 25px;
+  min-height: 650px;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-family: 'Barlow', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.text,
+.palpites,
+.ultimoResultado,
+.baixoOuAlto {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.campoPalpite {
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.envioPalpite, button {
+  border: 1px solid #0c0c0c;
+  background-color: #ccc;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ultimoResultado.erro {
+  background-color: #F53B35;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.ultimoResultado.acerto {
+  background-color: #00C274;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
