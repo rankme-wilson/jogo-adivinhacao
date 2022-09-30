@@ -56,9 +56,9 @@ function configFimDeJogo() {
 function reiniciarJogo() {
   contagemPalpites = 1;
 
-  var reinicarParas = document.querySelectorAll('.resultadoParas p');
+  var reiniciarParas = document.querySelectorAll('.resultadoParas p');
   for (var i = 0; i < reiniciarParas.length; i++) {
-    reinicarParas[i].textContent = '';
+    reiniciarParas[i].textContent = '';
   }
 
   botaoReinicio.parentNode.removeChild(botaoReinicio);
