@@ -68,7 +68,8 @@ function reiniciarJogo() {
   campoPalpite.value = '';
   campoPalpite.focus();
 
-  ultimoResultado.style.backgroundColor = 'white';
+  ultimoResultado.classList.remove("acerto");
+  ultimoResultado.classList.remove("erro");
 
   numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
