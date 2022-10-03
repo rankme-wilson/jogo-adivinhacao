@@ -21,6 +21,7 @@ function conferirPalpite() {
   if (palpiteUsuario === numeroAleatorio) {
     ultimoResultado.textContent = 'Parabéns! Você acertou!';
     ultimoResultado.classList.add("acerto");
+    ultimoResultado.classList.remove("erro");
     baixoOuAlto.textContent = '';
     configFimDeJogo();
   } else if (contagemPalpites === 10) {
@@ -31,9 +32,9 @@ function conferirPalpite() {
     ultimoResultado.textContent = 'Que pena você errou!';
     ultimoResultado.classList.add("erro");
     if(palpiteUsuario < numeroAleatorio) {
-      baixoOuAlto.textContent = 'Seu palpite está muito baixo!'
+      baixoOuAlto.textContent = 'Seu palpite está baixo!'
     } else if(palpiteUsuario > numeroAleatorio) {
-      baixoOuAlto.textContent = 'Seu palpite está muito alto!'
+      baixoOuAlto.textContent = 'Seu palpite está alto!'
     }
   }
 
